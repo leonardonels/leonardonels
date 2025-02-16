@@ -1,6 +1,8 @@
 ## Hello there... Welcome to my profile 👋
-💻 I'm a Computer engineer graduated on 2024 at UNIMORE, university of Modena and Reggio Emilia. 
-📚 I'm still studying for the master's degree in Artificial Intelligence engineering at UNIMORE.
+I'm a Computer engineer graduated on 2024 at UNIMORE, university of Modena and Reggio Emilia.
+
+## What am I working on? 📚
+I'm still studying for the master's degree in Artificial Intelligence engineering at UNIMORE.
 
 ## GitHub Stats 👀
 <table><tr><td valign="top" width="50%">
