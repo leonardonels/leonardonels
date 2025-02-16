@@ -3,8 +3,8 @@ I'm a Computer engineer graduated on 2024 at UNIMORE, university of Modena and R
 
 ## GitHub Stats  
 <table><tr><td valign="top" width="50%">
-<div align="center"><img src="https://github-readme-stats.vercel.app/api?username=leonardonels&theme=onedark&show_icons=true&hide_border=true&count_private=false" align="center" style="width: 100%" /></div>
-<div align="center"><img src="https://github-stats.omsimos.com/user/leonardonels?theme=onedark&hide_border=true&count_private=false" align="center" style="width: 100%" /></div>
+<div align="center"><img src="https://github-readme-stats.vercel.app/api?username=leonardonels&theme=onedark&show_icons=true&hide_border=true&count_private=true" align="center" style="width: 100%" /></div>
+<div align="center"><img src="https://streak-stats.demolab.com?user=leonardonels&theme=onedark&hide_border=false" align="center" style="width: 100%" /></div>
 </td></tr></table> 
 
 ## How can you reach to me? 🤔 📫
