@@ -1,7 +1,8 @@
 ## Hello there... Welcome to my profile 👋
-I'm a Computer engineer graduated on 2024 at UNIMORE, university of Modena and Reggio Emilia. I'm still studying for the master's degree in Artificial Intelligence engineering at UNIMORE.
+💻 I'm a Computer engineer graduated on 2024 at UNIMORE, university of Modena and Reggio Emilia. 
+📚 I'm still studying for the master's degree in Artificial Intelligence engineering at UNIMORE.
 
-## GitHub Stats  
+## GitHub Stats 👀
 <table><tr><td valign="top" width="50%">
 <div align="center"><img src="https://github-readme-stats.vercel.app/api?username=leonardonels&theme=onedark&show_icons=true&hide_border=true&count_private=true" align="center" style="width: 100%" /></div>
 <div align="center"><img src="https://streak-stats.demolab.com?user=leonardonels&theme=onedark&hide_border=true" align="center" style="width: 100%" /></div>
