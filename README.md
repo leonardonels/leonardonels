@@ -2,9 +2,10 @@
 I'm a Computer engineer graduated on 2024 at UNIMORE, university of Modena and Reggio Emilia. I'm still studying for the master's degree in Artificial Intelligence engineering at UNIMORE.
 
 ## GitHub Stats  
-
+<table><tr><td valign="top" width="50%">
 <div align="center"><img src="https://github-readme-stats.vercel.app/api?username=leonardonels&theme=onedark&show_icons=true&hide_border=true&count_private=true" align="center" style="width: 100%" /></div>
-<div align="center"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=leonardonels&theme=onedark&show_icons=true&hide_border=true&layout=compact" align="center" style="width: 100%" /></div> 
+<div align="center"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=leonardonels&theme=onedark&show_icons=true&hide_border=true&layout=compact" align="center" style="width: 100%" /></div>
+</td></tr></table> 
 
 ## How can you reach to me? 🤔 📫
 Feel free to write me at [this email address](mailto:leonardo.nels.2000@gmail.com) and we'll get in touch!
