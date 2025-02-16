@@ -1,4 +1,8 @@
-## Hi there 👋
+## Hello there... Welcome to my profile 👋
+I'm a Computer engineer graduated on 2024 at UNIMORE, university of Modena and Reggio Emilia. I'm still studying for the master's degree in Artificial Intelligence engineering at UNIMORE.
+
+## How can you reach to me? 🤔 📫
+Feel free to write me at [this email address](mailto:leonardo.nels.2000@gmail.com) and we'll get in touch!
 
 <!--
 **leonardonels/leonardonels** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
