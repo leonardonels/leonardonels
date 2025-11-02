@@ -12,7 +12,7 @@ Get in touch or explore:
 [![Instagram](https://img.shields.io/badge/Instagram-@leonardonels-E4405F?logo=instagram&logoColor=white)](https://www.instagram.com/leonardonels)
 [![Homepage](https://img.shields.io/badge/Projects-leonardonels.com-27F5C8?logo=website&logoColor=white)](https://leonardonels.com/work)
 <p align="center">
-<img src="https://img.shields.io/github/followers/leonardonels?logo=github&style=for-the-badge&color=27F5C8&labelColor=1c1917" /></a>
+<img src="https://img.shields.io/github/followers/leonardonels?logo=github&style=for-the-badge&color=E4405F&labelColor=1c1917" /></a>
 </p>
 
 ## Skills
