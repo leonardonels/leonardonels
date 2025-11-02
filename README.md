@@ -7,10 +7,15 @@ I'm currently pursuing a master's degree in Artificial Intelligence Engineering 
 ## What I'm working on… 👷
 Get in touch or explore:
 
+<p align="center">
 [![Email](https://img.shields.io/badge/Email-leonardo.nels.2000@gmail.com-c14438?logo=gmail&logoColor=white)](mailto:leonardo.nels.2000@gmail.com)
+&nbsp;
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-leonardonels-0A66C2?logo=linkedin&logoColor=white)](https://linkedin.com/in/leonardonels)
+&nbsp;
 [![Instagram](https://img.shields.io/badge/Instagram-@leonardonels-E4405F?logo=instagram&logoColor=white)](https://www.instagram.com/leonardonels)
+&nbsp;
 [![Homepage](https://img.shields.io/badge/Projects-leonardonels.com-27F5C8?logo=website&logoColor=white)](https://leonardonels.com/work)
+</p>
 <p align="right">
 <br></br>
 <img src="https://img.shields.io/github/followers/leonardonels?logo=github&style=for-the-badge&color=E4405F&labelColor=1c1917" /></a>
