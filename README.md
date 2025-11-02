@@ -12,6 +12,12 @@ Get in touch or explore:
 [![Instagram](https://img.shields.io/badge/Instagram-@leonardonels-E4405F?logo=instagram&logoColor=white)](https://www.instagram.com/leonardonels)
 [![Homepage](https://img.shields.io/badge/Projects-leonardonels.com-27F5C8?logo=website&logoColor=white)](https://leonardonels.com/work)
 
+<img src="https://img.shields.io/badge/Email-leonardo.nels.2000@gmail.com-c14438?logo=gmail&logoColor=white" /></a>
+<img src="https://img.shields.io/badge/LinkedIn-leonardonels-0A66C2?logo=linkedin&logoColor=white" /></a>
+<img src="https://img.shields.io/badge/Instagram-@leonardonels-E4405F?logo=instagram&logoColor=white" /></a>
+<img src="https://img.shields.io/badge/Projects-leonardonels.com-27F5C8?logo=website&logoColor=white)](https://leonardonels.com/work" /></a>
+<img src="https://img.shields.io/github/followers/leonardonels?logo=github&style=for-the-badge&color=ef4444&labelColor=1c1917" /></a>
+
 ## Skills
 🚗 Autonomous Driving | 🤖 Robotics | 🧠 AI Enthusiast | ☁️ Cloud • 🖥️ Server | 🔒 Server Security | 🛠️ Hardware Enthusiast
 
