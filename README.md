@@ -19,7 +19,9 @@ Get in touch or explore:
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="java" title="java" width="40" height="40"/>
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="html5" title="html5" width="40" height="40"/>
 </p>
-<p align="centre">
+<p align="center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" alt="arduino" title="arduino" width="40" height="40"/>
+
 </p>
 - Python, NumPy, pandas
 - Machine Learning: scikit-learn, PyTorch, TensorFlow
