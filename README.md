@@ -46,17 +46,9 @@ Get in touch or explore:
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-original.svg" alt="ubuntu" title="ubuntu" width="40" height="40"/>
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/debian/debian-original.svg" alt="debian" title="debian" width="40" height="40"/>
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fedora/fedora-original.svg" alt="fedora" title="fedora" width="40" height="40"/>
-
 </p>
 
-
-
-
-- Python, NumPy, pandas
-- Machine Learning: scikit-learn, PyTorch, TensorFlow
-- Data engineering: SQL, ETL, data cleaning
-- DevOps: Docker, Git, CI/CD
-- Others: Bash, Linux, basic web development
+🚗 Autonomous Driving | 🤖 Robotics | 🧠 AI Enthusiast | ☁️ Cloud • 🖥️ Server | 🔒 Server Security | Harware Enthusiast
 
 <!--
 ## Selected projects
