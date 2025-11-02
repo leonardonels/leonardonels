@@ -1,19 +1,19 @@
-## Hello there... Welcome to my profile 👋
+## _hhello_there... _welcome_to_my_profile 👋
 Hi — I'm Leonardo, a Computer Engineer (B.Sc., 2024) from UNIMORE (University of Modena and Reggio Emilia).
 
-## About
+## _about_me
 I'm currently pursuing a master's degree in Artificial Intelligence Engineering at UNIMORE and I work on machine learning and robotics, research projects, and open-source tooling.
 
-## Badges
+## _what_i'm_working_on...👷
 Get in touch or explore:
 
 [![Email](https://img.shields.io/badge/Email-leonardo.nels.2000@gmail.com-c14438?logo=gmail&logoColor=white)](mailto:leonardo.nels.2000@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-0A66C2?logo=linkedin&logoColor=white)](https://linkedin.com/in/leonardonels)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-leonardonels-0A66C2?logo=linked-in&logoColor=white)](https://linkedin.com/in/leonardonels)
 [![Instagram](https://img.shields.io/badge/Instagram-@leonardonels-E4405F?logo=instagram&logoColor=white)](https://www.instagram.com/leonardo.nels)
 [![Homepage](https://img.shields.io/badge/Homepage-Website-brightgreen?logo=website&logoColor=white)](https://leonardonels.com)
 [![Floratech](https://img.shields.io/badge/Homepage-Website-brightgreen?logo=website&logoColor=green)](https://floratech.leonardonels.com)
 
-## Skills
+## _skills
 - Python, NumPy, pandas
 - Machine Learning: scikit-learn, PyTorch, TensorFlow
 - Data engineering: SQL, ETL, data cleaning
