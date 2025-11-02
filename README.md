@@ -13,6 +13,8 @@ Get in touch or explore:
 [![Homepage](https://img.shields.io/badge/Projects-leonardonels.com-27F5C8?logo=website&logoColor=white)](https://leonardonels.com/work)
 
 ## Skills
+🚗 Autonomous Driving | 🤖 Robotics | 🧠 AI Enthusiast | ☁️ Cloud • 🖥️ Server | 🔒 Server Security | 🛠️ Hardware Enthusiast
+
 <p align="left">
     <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/c-colored.svg" alt="C" title="C" width="40" height="40"/>    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" title="C++" width="40" height="40"/>
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="python" title="python" width="40" height="40"/>
@@ -48,7 +50,6 @@ Get in touch or explore:
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fedora/fedora-original.svg" alt="fedora" title="fedora" width="40" height="40"/>
 </p>
 
-## 🚗 Autonomous Driving | 🤖 Robotics | 🧠 AI Enthusiast | ☁️ Cloud • 🖥️ Server | 🔒 Server Security | Harware Enthusiast
 
 <!--
 ## Selected projects
