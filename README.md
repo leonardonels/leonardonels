@@ -64,3 +64,18 @@ Get in touch or explore:
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=leonardonels&theme=jolly&show_icons=true&hide_border=true&layout=compact" alt="Top languages" width="500" />
 </div>
 
+<b>Top Repositories</b>
+
+<div width="100%" align="center">
+    <a href="https://github.com/leonardonels/lora-gpiozero" align="left"><img align="left" width="45%" src="https://github-readme-stats.vercel.app/api/pin/?username=leonardonels&repo=lora-gpiozero&title_color=64748b&text_color=ffffff&icon_color=ef4444&bg_color=1c1917&hide_border=true&locale=en" /></a>
+    <a href="https://github.com/leonardonels/passkey_engeneering_thesis_project" align="right"><img align="right" width="45%" src="https://github-readme-stats.vercel.app/api/pin/?username=leonardonels&repo=passkey_engeneering_thesis_project&title_color=64748b&text_color=ffffff&icon_color=ef4444&bg_color=1c1917&hide_border=true&locale=en" /></a>
+</div>
+<br /><br /><br /><br /><br /><br /><br />
+
+<br /><br /><br /><br /><br />
+
+<div width="100%" align="center">
+    <a href="https://github.com/leonardonels/cvcs_zed2" align="left"><img align="left" width="45%" src="https://github-readme-stats.vercel.app/api/pin/?username=leonardonels&repo=cvcs_zed2&title_color=64748b&text_color=ffffff&icon_color=ef4444&bg_color=1c1917&hide_border=true&locale=en" /></a>
+    <a href="https://github.com/leonardonels/ChessGame" align="right"><img align="right" width="45%" src="https://github-readme-stats.vercel.app/api/pin/?username=leonardonels&repo=ChessGame&title_color=64748b&text_color=ffffff&icon_color=ef4444&bg_color=1c1917&hide_border=true&locale=en" /></a>
+</div>
+
