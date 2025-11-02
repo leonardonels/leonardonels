@@ -11,7 +11,7 @@ Get in touch or explore:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-0A66C2?logo=linkedin&logoColor=white)](https://linkedin.com/in/leonardonels)
 [![Instagram](https://img.shields.io/badge/Instagram-@leonardonels-E4405F?logo=instagram&logoColor=white)](https://www.instagram.com/leonardo.nels)
 [![Homepage](https://img.shields.io/badge/Homepage-Website-brightgreen?logo=website&logoColor=white)](https://leonardonels.com)
-[![Floratech](https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/ugreen.png)](https://floratech.leonardonels.com)
+[![Floratech](https://img.shields.io/badge/Homepage-Website-brightgreen?logo=website&logoColor=green)](https://floratech.leonardonels.com)
 
 ## Skills
 - Python, NumPy, pandas
