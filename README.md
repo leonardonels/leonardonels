@@ -1,36 +1,34 @@
 ## Hello there... Welcome to my profile 👋
-I'm a Computer engineer graduated on 2024 at UNIMORE, university of Modena and Reggio Emilia.
+Hi — I'm Leonardo, a Computer Engineer (B.Sc., 2024) from UNIMORE (University of Modena and Reggio Emilia).
 
-## What am I working on? 📚
-I'm still studying for the master's degree in Artificial Intelligence engineering at UNIMORE.
+## About
+I'm currently pursuing a master's degree in Artificial Intelligence Engineering at UNIMORE and I work on machine learning and robotics, research projects, and open-source tooling.
+
+## Badges
+Get in touch or explore:
+
+[![Email](https://img.shields.io/badge/Email-leonardo.nels.2000@gmail.com-c14438?logo=gmail&logoColor=white)](mailto:leonardo.nels.2000@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-0A66C2?logo=linkedin&logoColor=white)](https://linkedin.com/in/leonardonels)
+[![Instagram](https://img.shields.io/badge/Instagram-@leonardonels-E4405F?logo=instagram&logoColor=white)](https://www.instagram.com/leonardo.nels)
+[![Homepage](https://img.shields.io/badge/Homepage-Website-brightgreen?logo=website&logoColor=white)](https://leonardonels.com)
+[![Floratech](https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/ugreen.png)](https://floratech.leonardonels.com)
+
+## Skills
+- Python, NumPy, pandas
+- Machine Learning: scikit-learn, PyTorch, TensorFlow
+- Data engineering: SQL, ETL, data cleaning
+- DevOps: Docker, Git, CI/CD
+- Others: Bash, Linux, basic web development
+
+<!--
+## Selected projects
+- Project Alpha — short description of the project and tech used. [Repo](https://github.com/leonardonels/PROJECT_ALPHA)
+- Project Beta — another project highlight (ML model, dataset, or web app). [Repo](https://github.com/leonardonels/PROJECT_BETA)
+- Project Gamma — experimental notebook or demo. [Repo](https://github.com/leonardonels/PROJECT_GAMMA)
+-->
 
 ## GitHub Stats 👀
 <table><tr><td valign="top" width="50%">
 <div align="center"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=leonardonels&theme=onedark&show_icons=true&hide_border=true&layout=compact" align="center" style="width: 100%" /></div>
-<!--<div align="center"><img src="https://streak-stats.demolab.com?user=leonardonels&theme=onedark&hide_border=true" align="center" style="width: 100%" /></div>-->
-</td></tr></table> 
-
-## How can you reach to me? 🤔 📫
-Feel free to write me at [this email address](mailto:leonardo.nels.2000@gmail.com) and we'll get in touch!
-
-<!--
-**leonardonels/leonardonels** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
-💻 👷‍♂️
-
-
-https://github-readme-stats.vercel.app/api/top-langs/?username=leonardonels&theme=onedark&show_icons=true&hide_border=true&layout=compact
-https://github-stats.omsimos.com/user/leonardonels?theme=onedark&hide_border=true&count_private=true
--->
-
+</td></tr></table>
 
