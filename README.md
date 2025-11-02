@@ -10,7 +10,7 @@ Get in touch or explore:
 [![Email](https://img.shields.io/badge/Email-leonardo.nels.2000@gmail.com-c14438?logo=gmail&logoColor=white)](mailto:leonardo.nels.2000@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-leonardonels-0A66C2?logo=linkedin&logoColor=white)](https://linkedin.com/in/leonardonels)
 [![Instagram](https://img.shields.io/badge/Instagram-@leonardonels-E4405F?logo=instagram&logoColor=white)](https://www.instagram.com/leonardo.nels)
-[![Homepage](https://img.shields.io/badge/Homepage-leonardonels.com-27F5C8?logo=website&logoColor=white)](https://leonardonels.com/work)
+[![Homepage](https://img.shields.io/badge/projects-leonardonels.com-27F5C8?logo=website&logoColor=white)](https://leonardonels.com/work)
 [![Floratech](https://img.shields.io/badge/Homepage-floratech-brightgreen?logo=website&logoColor=green)](https://floratech.leonardonels.com)
 
 ## _skills
