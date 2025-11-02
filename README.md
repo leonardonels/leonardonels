@@ -12,7 +12,9 @@ Get in touch or explore:
     <a href="https://linkedin.com/in/leonardonels"><img src="https://img.shields.io/badge/LinkedIn-leonardonels-0A66C2?logo=linkedin&logoColor=white" alt="LinkedIn" /></a>&nbsp;
     <a href="https://www.instagram.com/leonardonels"><img src="https://img.shields.io/badge/Instagram-@leonardonels-E4405F?logo=instagram&logoColor=white" alt="Instagram" /></a>&nbsp;
     <a href="https://leonardonels.com/work"><img src="https://img.shields.io/badge/Projects-leonardonels.com-27F5C8?logo=website&logoColor=white" alt="Homepage" /></a>&nbsp;
-    <a href="https://github.com/leonardonels"><img src="https://img.shields.io/github/followers/leonardonels?logo=github&style=for-the-badge&color=E4405F&labelColor=1c1917" alt="Followers" /></a>
+    <p align="right">
+        <a href="https://github.com/leonardonels"><img src="https://img.shields.io/github/followers/leonardonels?logo=github&style=for-the-badge&color=E4405F&labelColor=1c1917" alt="Followers" /></a>
+    </p>
 </p>
 
 ## Skills
