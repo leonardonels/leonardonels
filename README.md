@@ -4,14 +4,15 @@ Hi — I'm Leonardo, a Computer Engineer (B.Sc., 2024) from UNIMORE (University 
 ## Aboutm me
 I'm currently pursuing a master's degree in Artificial Intelligence Engineering at UNIMORE and I work on machine learning and robotics, research projects, and open-source tooling.
 
-## What i'm working on...👷
+## What I'm working on… 👷
 Get in touch or explore:
-<p align="center">
+
+<div align="center">
     [![Email](https://img.shields.io/badge/Email-leonardo.nels.2000@gmail.com-c14438?logo=gmail&logoColor=white)](mailto:leonardo.nels.2000@gmail.com)
     [![LinkedIn](https://img.shields.io/badge/LinkedIn-leonardonels-0A66C2?logo=linkedin&logoColor=white)](https://linkedin.com/in/leonardonels)
-    [![Instagram](https://img.shields.io/badge/Instagram-@leonardonels-E4405F?logo=instagram&logoColor=white)](https://www.instagram.com/leonardo.nels)
+    [![Instagram](https://img.shields.io/badge/Instagram-@leonardonels-E4405F?logo=instagram&logoColor=white)](https://www.instagram.com/leonardonels)
     [![Homepage](https://img.shields.io/badge/Projects-leonardonels.com-27F5C8?logo=website&logoColor=white)](https://leonardonels.com/work)
-</p>
+</div>
 
 ## Skills
 🚗 Autonomous Driving | 🤖 Robotics | 🧠 AI Enthusiast | ☁️ Cloud • 🖥️ Server | 🔒 Server Security | 🛠️ Hardware Enthusiast
