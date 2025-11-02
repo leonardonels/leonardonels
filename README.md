@@ -27,7 +27,7 @@ Get in touch or explore:
 -->
 
 ## GitHub Stats 👀
-<table><tr><td valign="top" width="50%">
-<div align="center"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=leonardonels&theme=jolly&show_icons=true&hide_border=true&layout=compact" align="center" style="width: 100%" /></div>
-</td></tr></table>
+<div align="center">
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=leonardonels&theme=jolly&show_icons=true&hide_border=true" alt="Top languages" width="700" />
+</div>
 
