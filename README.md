@@ -59,7 +59,7 @@ Get in touch or explore:
 -->
 
 ## GitHub Stats 👀
-<div align="center">
+<div align="left">
 <img src="https://github-readme-stats.vercel.app/api?username=leonardonels&theme=jolly&show_icons=true&hide_border=true&hide=prs,issues,&count_private=true&count_private=true" alt="stats" width="500"/>
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=leonardonels&theme=jolly&show_icons=true&hide_border=true&layout=compact" alt="Top languages" width="500" />
 </div>
