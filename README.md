@@ -8,9 +8,9 @@ I'm currently pursuing a master's degree in Artificial Intelligence Engineering 
 Get in touch or explore:
 
 [![Email](https://img.shields.io/badge/Email-leonardo.nels.2000@gmail.com-c14438?logo=gmail&logoColor=white)](mailto:leonardo.nels.2000@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-leonardonels-0A66C2?logo=linked-in&logoColor=white)](https://linkedin.com/in/leonardonels)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-leonardonels-0A66C2?logo=linkedin&logoColor=white)](https://linkedin.com/in/leonardonels)
 [![Instagram](https://img.shields.io/badge/Instagram-@leonardonels-E4405F?logo=instagram&logoColor=white)](https://www.instagram.com/leonardo.nels)
-[![Homepage](https://img.shields.io/badge/Homepage-Website-brightgreen?logo=website&logoColor=white)](https://leonardonels.com)
+[![Homepage](https://img.shields.io/badge/Homepage-Website-27F5C8?logo=website&logoColor=white)](https://leonardonels.com)
 [![Floratech](https://img.shields.io/badge/Homepage-Website-brightgreen?logo=website&logoColor=green)](https://floratech.leonardonels.com)
 
 ## _skills
