@@ -48,7 +48,7 @@ Get in touch or explore:
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fedora/fedora-original.svg" alt="fedora" title="fedora" width="40" height="40"/>
 </p>
 
-🚗 Autonomous Driving | 🤖 Robotics | 🧠 AI Enthusiast | ☁️ Cloud • 🖥️ Server | 🔒 Server Security | Harware Enthusiast
+## 🚗 Autonomous Driving | 🤖 Robotics | 🧠 AI Enthusiast | ☁️ Cloud • 🖥️ Server | 🔒 Server Security | Harware Enthusiast
 
 <!--
 ## Selected projects
