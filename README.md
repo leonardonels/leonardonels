@@ -50,7 +50,7 @@ I'm currently pursuing a master's degree in Artificial Intelligence Engineering 
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fedora/fedora-original.svg" alt="fedora" title="fedora" width="40" height="40"/>
 </p>
 
-Get in touch or explore:
+## Get in touch or explore:
 
 <p align="center">
     <a href="mailto:leonardo.nels.2000@gmail.com"><img src="https://img.shields.io/badge/Email-leonardo.nels.2000@gmail.com-c14438?logo=gmail&logoColor=white" alt="Email" /></a>&nbsp;
