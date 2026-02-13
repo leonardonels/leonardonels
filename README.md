@@ -5,12 +5,12 @@ Hi — I'm Leonardo, a Computer Engineer (B.Sc., 2024) from UNIMORE (University 
 I'm currently pursuing a master's degree in Artificial Intelligence Engineering at UNIMORE and I work on machine learning and robotics, research projects, and open-source tooling.
 
 ## What I'm working on… 👷
-- [Learning Cuda](https://github.com/leonardonels/cuda-sandbox.git) 🛠️
-- [Study of Leader Election for robotics](https://github.com/leonardonels/leader_election_ros.git) 🤖
-- [ROS2 driver for lidar sensor Hesai OT128](https://github.com/leonardonels/HesaiLidar_ROS_2.0.git) 🚗
-- [Cones Clustering with cuda for Formula Student Autonomous Driving races](https://github.com/leonardonels/HesaiLidar_ROS_2.0.git) 🧠
-- [Floratech - University project for the IoT course](https://github.com/leonardonels/floratech.git) ☁️
-- [My cute HomeLab](https://github.com/leonardonels/roxan.git) 🖥️
+- 🛠️ [Learning Cuda](https://github.com/leonardonels/cuda-sandbox.git) 
+- 🤖 [Study of Leader Election for robotics](https://github.com/leonardonels/leader_election_ros.git) 
+- 🚗 [ROS2 driver for lidar sensor Hesai OT128](https://github.com/leonardonels/HesaiLidar_ROS_2.0.git) 
+- 🧠 [Cones Clustering with cuda for Formula Student Autonomous Driving races](https://github.com/leonardonels/HesaiLidar_ROS_2.0.git) 
+- ☁️ [Floratech - University project for the IoT course](https://github.com/leonardonels/floratech.git) 
+- 🖥️ [My cute HomeLab](https://github.com/leonardonels/roxan.git) 
 
 ## Skills
 🚗 Autonomous Driving | 🤖 Robotics | 🧠 AI Enthusiast | ☁️ Cloud • 🖥️ Server | 🔒 Cyber Security | 🛠️ Hardware Enthusiast
