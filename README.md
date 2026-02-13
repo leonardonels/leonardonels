@@ -41,6 +41,14 @@ I'm currently pursuing a master's degree in Artificial Intelligence Engineering 
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" alt="arduino" title="arduino" width="40" height="40"/>
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original.svg" alt="raspberrypi" title="raspberrypi" width="40" height="40"/>
 </p>
+<p align="center">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" alt="blender" title="blender" width="40" height="40"/>
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fusion/fusion-original.svg" alt="fusion" title="fusion" width="40" height="40"/>
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/archlinux/archlinux-original.svg" alt="archlinux" title="archlinux" width="40" height="40"/>
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-original.svg" alt="ubuntu" title="ubuntu" width="40" height="40"/>
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/debian/debian-original.svg" alt="debian" title="debian" width="40" height="40"/>
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fedora/fedora-original.svg" alt="fedora" title="fedora" width="40" height="40"/>
+</p>
 
 Get in touch or explore:
 
@@ -49,14 +57,6 @@ Get in touch or explore:
     <a href="https://linkedin.com/in/leonardonels"><img src="https://img.shields.io/badge/LinkedIn-leonardonels-0A66C2?logo=linkedin&logoColor=white" alt="LinkedIn" /></a>&nbsp;
     <a href="https://www.instagram.com/leonardonels"><img src="https://img.shields.io/badge/Instagram-@leonardonels-E4405F?logo=instagram&logoColor=white" alt="Instagram" /></a>&nbsp;
     <a href="https://leonardonels.com/work"><img src="https://img.shields.io/badge/Projects-leonardonels.com-27F5C8?logo=website&logoColor=white" alt="Homepage" /></a>&nbsp;
-</p>
-<p align="center">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" alt="blender" title="blender" width="40" height="40"/>
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fusion/fusion-original.svg" alt="fusion" title="fusion" width="40" height="40"/>
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/archlinux/archlinux-original.svg" alt="archlinux" title="archlinux" width="40" height="40"/>
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-original.svg" alt="ubuntu" title="ubuntu" width="40" height="40"/>
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/debian/debian-original.svg" alt="debian" title="debian" width="40" height="40"/>
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fedora/fedora-original.svg" alt="fedora" title="fedora" width="40" height="40"/>
 </p>
 
 
