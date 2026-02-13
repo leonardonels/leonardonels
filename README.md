@@ -5,14 +5,12 @@ Hi — I'm Leonardo, a Computer Engineer (B.Sc., 2024) from UNIMORE (University 
 I'm currently pursuing a master's degree in Artificial Intelligence Engineering at UNIMORE and I work on machine learning and robotics, research projects, and open-source tooling.
 
 ## What I'm working on… 👷
-Get in touch or explore:
-
-<p align="center">
-    <a href="mailto:leonardo.nels.2000@gmail.com"><img src="https://img.shields.io/badge/Email-leonardo.nels.2000@gmail.com-c14438?logo=gmail&logoColor=white" alt="Email" /></a>&nbsp;
-    <a href="https://linkedin.com/in/leonardonels"><img src="https://img.shields.io/badge/LinkedIn-leonardonels-0A66C2?logo=linkedin&logoColor=white" alt="LinkedIn" /></a>&nbsp;
-    <a href="https://www.instagram.com/leonardonels"><img src="https://img.shields.io/badge/Instagram-@leonardonels-E4405F?logo=instagram&logoColor=white" alt="Instagram" /></a>&nbsp;
-    <a href="https://leonardonels.com/work"><img src="https://img.shields.io/badge/Projects-leonardonels.com-27F5C8?logo=website&logoColor=white" alt="Homepage" /></a>&nbsp;
-</p>
+[Learning Cuda](https://github.com/leonardonels/cuda-sandbox.git)
+[Study of Leader Election in robotics](https://github.com/leonardonels/leader_election_ros.git)
+[ROS2 driver for lidar sensor Hesai OT128](https://github.com/leonardonels/HesaiLidar_ROS_2.0.git)
+[Cones Clustering with cuda for Formula Student Autonomous Driving races](https://github.com/leonardonels/HesaiLidar_ROS_2.0.git)
+[Floratech - University project for the IoT course](https://github.com/leonardonels/floratech.git)
+[My cute HomeLab](https://github.com/leonardonels/roxan.git)
 
 ## Skills
 🚗 Autonomous Driving | 🤖 Robotics | 🧠 AI Enthusiast | ☁️ Cloud • 🖥️ Server | 🔒 Cyber Security | 🛠️ Hardware Enthusiast
@@ -42,6 +40,15 @@ Get in touch or explore:
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gazebo/gazebo-original.svg" alt="gazebo" title="gazebo" width="40" height="40"/>
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" alt="arduino" title="arduino" width="40" height="40"/>
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original.svg" alt="raspberrypi" title="raspberrypi" width="40" height="40"/>
+</p>
+
+Get in touch or explore:
+
+<p align="center">
+    <a href="mailto:leonardo.nels.2000@gmail.com"><img src="https://img.shields.io/badge/Email-leonardo.nels.2000@gmail.com-c14438?logo=gmail&logoColor=white" alt="Email" /></a>&nbsp;
+    <a href="https://linkedin.com/in/leonardonels"><img src="https://img.shields.io/badge/LinkedIn-leonardonels-0A66C2?logo=linkedin&logoColor=white" alt="LinkedIn" /></a>&nbsp;
+    <a href="https://www.instagram.com/leonardonels"><img src="https://img.shields.io/badge/Instagram-@leonardonels-E4405F?logo=instagram&logoColor=white" alt="Instagram" /></a>&nbsp;
+    <a href="https://leonardonels.com/work"><img src="https://img.shields.io/badge/Projects-leonardonels.com-27F5C8?logo=website&logoColor=white" alt="Homepage" /></a>&nbsp;
 </p>
 <p align="center">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" alt="blender" title="blender" width="40" height="40"/>
