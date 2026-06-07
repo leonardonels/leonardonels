@@ -6,7 +6,7 @@ I'm currently pursuing a master's degree in Artificial Intelligence Engineering 
 
 ## What I'm working on… 👷
 - 🛠️ [Learning Cuda](https://github.com/leonardonels/cuda-sandbox.git) 
-- 🤖 [Study of Leader Election for robotics](https://github.com/leonardonels/leader_election_ros.git) 
+- 🤖 [Learning Leader Election for robotics - Master's Degree subject](https://github.com/leonardonels/leader_election_ros.git) 
 - 🚗 [ROS2 driver for lidar sensor Hesai OT128](https://github.com/leonardonels/HesaiLidar_ROS_2.0.git) 
 - 🧠 [cuCONERUSH - ROS2 package that aim to recognise cones from lidar PCL in autonomous racing](https://github.com/leonardonels/cuda_cone_rush)
 - 🍦 [ConeSortium - A distinguished assembly of packages for the only objects in autonomous racing that refuse to drift: cones](https://github.com/leonardonels/ConeSortium.git)
