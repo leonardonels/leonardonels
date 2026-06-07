@@ -8,7 +8,8 @@ I'm currently pursuing a master's degree in Artificial Intelligence Engineering 
 - 🛠️ [Learning Cuda](https://github.com/leonardonels/cuda-sandbox.git) 
 - 🤖 [Study of Leader Election for robotics](https://github.com/leonardonels/leader_election_ros.git) 
 - 🚗 [ROS2 driver for lidar sensor Hesai OT128](https://github.com/leonardonels/HesaiLidar_ROS_2.0.git) 
-- 🧠 [cuCONERUSH - Developed to cluster cones on jetson for Formula Student Autonomous Driving races](https://github.com/leonardonels/cuda_cone_rush) 
+- 🧠 [cuCONERUSH - Developed to cluster cones on jetson for Formula Student Autonomous Driving races](https://github.com/leonardonels/cuda_cone_rush)
+- 🍦 [ConeSortium - A distinguished assembly of ROS 2 packages for the only objects in autonomous racing that refuse to drift: cones](https://github.com/leonardonels/ConeSortium.git)
 - ☁️ [Floratech - University project for the IoT course](https://github.com/leonardonels/floratech.git) 
 - 🖥️ [My cute HomeLab](https://github.com/leonardonels/roxan.git) 
 
