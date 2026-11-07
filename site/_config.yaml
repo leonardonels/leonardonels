@@ -1,7 +1,7 @@
 title: Leonardo Nels
 description: Leonardo Nels, M.Sc. student in AI Engineering at UNIMORE. LiDAR perception for autonomous racing with CUDA and ROS 2.
-url: https://leonardonels.github.io
-baseurl: /leonardonels # set to "" if you move to your own domain
+url: https://leonardonels.com
+baseurl: "" # served from the leonardonels.com custom domain
 timezone: Europe/Rome
 permalink: /blog/:title/
 
