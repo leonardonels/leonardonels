@@ -7,15 +7,15 @@ layout: default
 
     <div class="bp-main">
       <div class="halftone" aria-hidden="true"></div>
-      <div class="bp-head mono"><span>AI engineering student · Modena</span><span>Boarding pass · Class M.Sc.</span></div>
+      <div class="bp-head mono"><span>AI engineering student · Modena</span></div>
 
       <div class="route-hero">
-        <span class="route-end"><span class="mono">From</span><span class="disp">MOD</span></span>
+        <span class="route-end"><span class="mono">From</span><span class="disp">MO</span></span>
         <span class="disp route-arrow" aria-hidden="true">→</span>
-        <span class="route-end"><span class="mono">To</span><span class="disp">CONES</span></span>
+        <span class="route-end"><span class="mono">To</span><span class="disp">?</span></span>
       </div>
 
-      <h1>I make robots see <span class="accent">cones.</span></h1>
+      <h1>I open things up to see why they're <span class="accent">slow.</span></h1>
 
       <p class="intro">Hi, I'm Leonardo. M.Sc. student in AI Engineering at UNIMORE. I write CUDA, ROS 2 and too many Docker containers.</p>
       <!--
@@ -25,6 +25,7 @@ layout: default
       <div class="actions">
         <a class="btn btn-ink lift" href="https://github.com/leonardonels">GitHub ↗</a>
         <a class="btn lift" href="#work">See the projects ↓</a>
+        <span class="bp-foot mono">Boarding pass · Class M.Sc.</span>
       </div>
     </div>
 
@@ -32,7 +33,7 @@ layout: default
       <span class="mono">Stub · keep</span>
       <span class="stub-field"><span class="mono">Passenger</span><span class="stub-text">Nels / Leonardo</span></span>
       <span class="stub-field"><span class="mono">Seat</span><span class="stub-text">AI Eng.</span></span>
-      <span class="stub-field"><span class="mono">Flight</span><span class="disp stub-big">LN 007</span></span>
+      <span class="stub-field"><span class="mono">Flights</span><span class="disp stub-big">LN 007</span></span>
       <span class="barcode" aria-hidden="true"></span>
     </div>
   </div>
@@ -41,6 +42,9 @@ layout: default
     <div class="card now">
       <span class="mono accent now-label"><span class="status-dot"></span>Now boarding · Gate F</span>
       <span class="now-text">Training autonomous robots for Fincantieri S.p.A.</span>
+
+      <span class="mono accent now-label now-next"><span class="status-dot"></span>Landed · 2026</span>
+      <span class="now-text">Autonomous Driving Division Leader at MMR, More Modena Racing</span>
     </div>
 
     <div class="card">
@@ -62,8 +66,15 @@ layout: default
 {% assign projects = site.projects | sort: "order" %}
 {% assign others = projects | where_exp: "project", "project.featured != true" %}
 
-<div class="ticker" aria-hidden="true">
-  <span>Departures{% for project in others %} — {{ project.flight | remove: " " }} {{ project.name }} {% if project.stub.accent %}<span class="accent">{{ project.stub.value }}</span>{% else %}{{ project.stub.note | default: "on time" | downcase }}{% endif %}{% endfor %} — LN∞ all repositories open — Departures{% for project in others %} — {{ project.flight | remove: " " }} {{ project.name }} {% if project.stub.accent %}<span class="accent">{{ project.stub.value }}</span>{% else %}{{ project.stub.note | default: "on time" | downcase }}{% endif %}{% endfor %}</span>
+{%- comment -%}
+  Split-flap departures board. Without JavaScript it shows the list as one
+  static line; script.js turns it into flap cells that page through it.
+{%- endcomment -%}
+<div class="board" aria-hidden="true">
+  <span class="board-label mono">Departures</span>
+  <div class="board-flaps">
+    {% for project in others %}<span class="board-item"><span>{{ project.flight | remove: " " }} {{ project.name }} </span>{% if project.stub.accent %}<b class="accent">{{ project.stub.value }}</b>{% else %}<span>{{ project.stub.note | default: "on time" }}</span>{% endif %}</span>{% endfor %}<span class="board-item"><span>LN∞ All repositories open</span></span>
+  </div>
 </div>
 
 <section class="work" id="work">
@@ -75,12 +86,12 @@ layout: default
   {% assign featured = projects | where: "featured", true %}
   {% for project in featured %}
     {% assign card = project.card | default: "featured-card" %}
-    {% include {{ card }}.html project=project %}
+    <div class="featured-wrap">{% include {{ card }}.html project=project %}</div>
   {% endfor %}
 
   <div class="passes">
     {% for project in others %}
-    <a class="bp lift" href="{{ project.link }}">
+    <a class="bp lift reveal reveal-drop" href="{{ project.link }}" style="--d: {{ forloop.index0 | modulo: 2 | times: 0.12 }}s">
       <span class="notch notch-top" aria-hidden="true"></span><span class="notch notch-bottom" aria-hidden="true"></span>
       <span class="bp-main">
         <span class="mono">{{ project.flight }} · {{ project.tag }}</span>
@@ -96,7 +107,7 @@ layout: default
     </a>
     {% endfor %}
 
-    <a class="bp bp-dark lift" href="https://github.com/leonardonels?tab=repositories">
+    <a class="bp bp-dark lift reveal reveal-drop" href="https://github.com/leonardonels?tab=repositories" style="--d: {{ others.size | modulo: 2 | times: 0.12 }}s">
       <span class="notch notch-top" aria-hidden="true"></span><span class="notch notch-bottom" aria-hidden="true"></span>
       <span class="bp-main">
         <span class="mono">There is more · Charter</span>
@@ -182,6 +193,6 @@ layout: default
   <div class="bp-stub">
     <span class="mono">Seats left</span>
     <span class="disp hire-seats accent">1</span>
-    <span class="mono">MOD → you</span>
+    <span class="mono">MO → you</span>
   </div>
 </section>

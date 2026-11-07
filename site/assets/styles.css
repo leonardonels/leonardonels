@@ -8,11 +8,18 @@
   --sheet-hover: #FBF8F1;
   --ink: #1A1714;
   --ink-soft: #CFC8B8; /* labels on dark passes */
+  --tile: #2E2925;      /* departures board flaps */
+  --tile-leaf: #3A352F;
   --accent: #C8221A;  /* the one red */
   --accent-dark: #A81B14;
   --on-accent: #F4EFE4;
-  --depth: 4px;       /* card shadow; 0 turns shadows off */
-  --shadow: var(--depth) var(--depth) 0 var(--ink);
+  /* Shadows are printed as a coarse halftone screen, never solid ink, so they
+     cannot be confused with the solid dark blocks. */
+  --shadow-offset: 10px;
+  /* One 6px tile with one ink dot. An image tile is drawn once and repeated;
+     a tiny radial-gradient tile is re-painted dot by dot and made scrolling stall. */
+  --shadow-screen: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='6' height='6'%3E%3Ccircle cx='3' cy='3' r='2' fill='%231A1714'/%3E%3C/svg%3E");
+  --shadow-pitch: 6px;
   --grain: .18;
   --gutter: clamp(16px, 3vw, 40px);
   --sans: 'Space Grotesk', sans-serif;
@@ -59,8 +66,11 @@ a { color: var(--ink); }
   z-index: 10;
   pointer-events: none;
   opacity: var(--grain);
-  mix-blend-mode: multiply;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
+  /* The noise is black ink with alpha = 1 - grey, which darkens exactly like
+     multiply did. A blend mode on a fixed full-screen layer made the whole page
+     repaint on every scroll step and flap flip. */
+  will-change: transform;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 0 1'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
 }
 
 .container,
@@ -96,12 +106,41 @@ a { color: var(--ink); }
 .card {
   border: 2px solid var(--ink);
   background: var(--sheet);
-  box-shadow: var(--shadow);
 }
 
-/* Press: the pass sinks into its shadow */
-.lift { box-shadow: var(--shadow); transition: translate .12s ease, box-shadow .12s ease; }
-.lift:hover { translate: 3px 3px; box-shadow: none; }
+/* Halftone shadow: a dot screen printed behind and below-right of the block */
+.card,
+.lift,
+.bp-hero,
+.hire,
+.board,
+.featured-wrap { position: relative; }
+
+.card::after,
+.lift::after,
+.bp-hero::after,
+.hire::after,
+.board::after,
+.featured-wrap::after {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  z-index: -1;
+  translate: var(--shadow-offset) var(--shadow-offset);
+  background-image: var(--shadow-screen);
+  background-size: var(--shadow-pitch) var(--shadow-pitch);
+  pointer-events: none;
+}
+
+/* Press: the pass sinks 4px into its shadow while the dots stay put.
+   It moves with top/left, not translate: a translate makes the pass its own
+   layer, and its dots would then paint over its paper. */
+.lift { top: 0; left: 0; transition: top .12s ease, left .12s ease; }
+.lift::after { transition: translate .12s ease; }
+.lift:hover { top: 4px; left: 4px; }
+.lift:hover::after {
+  translate: calc(var(--shadow-offset) - 4px) calc(var(--shadow-offset) - 4px);
+}
 
 .btn {
   display: inline-flex;
@@ -225,7 +264,7 @@ a { color: var(--ink); }
   gap: 28px;
 }
 
-.bp-hero { --stub: 200px; flex: 999 1 640px; box-shadow: var(--shadow); }
+.bp-hero { --stub: 200px; flex: 999 1 640px; }
 .bp-hero .bp-stub { padding: 28px 20px; }
 
 .bp-hero .bp-main {
@@ -254,6 +293,9 @@ a { color: var(--ink); }
   justify-content: space-between;
   gap: 8px 24px;
 }
+
+/* Fine print in the bottom-right corner, on the buttons' row */
+.bp-foot { margin-left: auto; align-self: flex-end; }
 
 .route-hero {
   display: flex;
@@ -309,6 +351,9 @@ a { color: var(--ink); }
 
 .now-text { font-size: 23px; font-weight: 700; line-height: 1.2; }
 
+/* A second leg in the same card, below a dashed tear line */
+.now-next { margin-top: 8px; padding-top: 20px; border-top: 2px dashed var(--ink); }
+
 .chips {
   display: flex;
   flex-wrap: wrap;
@@ -326,17 +371,93 @@ a { color: var(--ink); }
   font-weight: 700;
 }
 
-/* ---------- Ticker ---------- */
-.ticker {
-  padding: 12px 0;
+/* ---------- Departures board ---------- */
+/* A split-flap board: dark tiles with a hairline split, red tiles for the
+   status that matters. script.js builds the tiles; without it the list
+   shows as one static line. */
+.board {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 12px;
+  border: 2px solid var(--ink);
+  background: var(--ink);
+  color: var(--sheet);
+}
+
+.board-label {
+  flex: none;
+  padding: 7px 9px;
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+.board-flaps {
+  flex: 1;
+  min-width: 0;
   overflow: hidden;
-  border-top: 2px solid var(--ink);
-  border-bottom: 2px solid var(--ink);
   font-family: var(--mono);
   font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
   white-space: nowrap;
+}
+
+/* Static fallback before the script runs */
+.board-item + .board-item::before { content: " — "; }
+
+.board-flaps.live {
+  display: grid;
+  grid-template-columns: repeat(var(--columns, 40), max-content);
+  gap: 3px 2px;
+}
+
+.flap {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 1.05em;
+  height: 30px;
+  overflow: hidden;
+  border-radius: 2px;
+  background: var(--tile);
+  line-height: 1;
+  contain: layout paint; /* a flip repaints only its own tile */
+}
+
+/* The split between the two halves of a flap */
+.flap::before {
+  content: "";
+  position: absolute;
+  inset: 50% 0 auto;
+  z-index: 1;
+  height: 1px;
+  background: rgba(0, 0, 0, .55);
+}
+
+/* The upper leaf falling on each flip */
+.flap::after {
+  content: "";
+  position: absolute;
+  inset: 0 0 50%;
+  background: linear-gradient(var(--tile-leaf), var(--tile));
+  transform-origin: bottom;
+  opacity: 0;
+}
+
+.flap.flip-a::after { animation: flap-a .055s linear; }
+.flap.flip-b::after { animation: flap-b .055s linear; }
+
+.flap.accent { background: var(--accent); color: var(--on-accent); }
+
+@keyframes flap-a {
+  from { opacity: 1; transform: perspective(40px) rotateX(0deg); }
+  to   { opacity: 1; transform: perspective(40px) rotateX(-90deg); }
+}
+
+@keyframes flap-b {
+  from { opacity: 1; transform: perspective(40px) rotateX(0deg); }
+  to   { opacity: 1; transform: perspective(40px) rotateX(-90deg); }
 }
 
 /* ---------- Work ---------- */
@@ -406,7 +527,7 @@ a.leg:hover { background: var(--sheet-hover); }
 .leg-status { text-align: right; }
 
 /* ---------- Hire ---------- */
-.hire { --stub: 200px; box-shadow: var(--shadow); }
+.hire { --stub: 200px; }
 .hire .bp-stub { padding: 28px 20px; }
 
 .hire-main {
@@ -479,6 +600,9 @@ a.leg:hover { background: var(--sheet-hover); }
   .bp, .bp-hero, .hire { grid-template-columns: 1fr; }
   .bp-stub { border-left: 0; border-top: 2px dashed var(--ink); }
   .bp-dark .bp-stub { border-top-color: var(--field); }
+  .board { flex-wrap: wrap; gap: 10px; }
+  .board-flaps { flex-basis: 100%; font-size: 13px; }
+  .flap { height: 26px; }
   .notch { display: none; }
   .passes { grid-template-columns: 1fr; }
 
@@ -492,19 +616,31 @@ a.leg:hover { background: var(--sheet-hover); }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .lift { transition: none; }
+  .lift, .lift::after { transition: none; }
 }
 
 /* =====================================================================
    Kept as they are: the featured cards (Prismark, ConeSortium and the
    generic one) keep the site's earlier style, with their own black ink,
-   white paper, heavy shadow and press effect.
+   white paper and press effect. Only the shadow is the site's dots.
    ===================================================================== */
 .featured { --ink: #000; --paper: #fff; }
 
-.press { transition: translate .12s ease, box-shadow .12s ease; }
-.press:hover { translate: 5px 5px; box-shadow: 1px 1px 0 var(--ink); }
-.press:active { translate: 8px 8px; box-shadow: 0 0 0 var(--ink); }
+.press { transition: translate .12s ease; }
+.press:hover { translate: 5px 5px; }
+.press:active { translate: 8px 8px; }
+
+/* Their shadow is the site's dot screen, printed by a wrapper so the card's
+   own drop-in and press animations don't lift the dots above it. The dots
+   wait for the card to land; pressed, the card sinks toward them. */
+.featured-wrap:has(> .reveal:not(.in))::after { opacity: 0; }
+.featured-wrap:has(> .reveal.in)::after { animation: dots-in .2s ease .55s backwards; }
+@keyframes dots-in { from { opacity: 0; } }
+
+/* The standard passes drop in the same way, two columns a beat apart, and
+   their dots print once each pass has landed. */
+.lift.reveal:not(.in)::after { opacity: 0; }
+.lift.reveal.in::after { animation: dots-in .2s ease calc(var(--d, 0s) + .8s) backwards; }
 
 .project-tag {
   align-self: flex-start;
@@ -523,7 +659,6 @@ a.leg:hover { background: var(--sheet-hover); }
   flex-wrap: wrap;
   border: 3px solid var(--ink);
   background: var(--paper);
-  box-shadow: 10px 10px 0 var(--ink);
   text-decoration: none;
 }
 
@@ -698,7 +833,7 @@ a.leg:hover { background: var(--sheet-hover); }
 .pm-identity {
   flex: 3 1 460px;
   gap: 40px;
-  background: var(--pm-light);
+  background: var(--pm-volt);
   color: var(--pm-navy);
 }
 
@@ -818,7 +953,7 @@ a.leg:hover { background: var(--sheet-hover); }
    (the 1.5px gap shows the rule colour through), labels pinned to the corners,
    and three by-law endings withheld behind black bars. */
 .conesortium {
-  --cs-paper: #E9E5DC;
+  --cs-paper: #F2EDE1;
   --cs-ink: #1B1A17;
   --cs-rule: #2B2925;
   --cs-red: #A82C25;
