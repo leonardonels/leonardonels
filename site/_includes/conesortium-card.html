@@ -1,0 +1,37 @@
+{% assign project = include.project %}
+{%- comment -%}
+  The ConeSortium's own card: a page of its register of members.
+  Words in <span class="cs-r"> are withheld behind black bars. Hover or keyboard
+  focus reveals them; on touch, the first tap reveals and the second opens the link.
+  Keep the Withheld count in .cs-withheld equal to the number of .cs-r spans.
+{%- endcomment -%}
+<a class="featured conesortium reveal reveal-drop press" href="{{ project.link }}">
+  <span class="cs-corner cs-tl">{{ project.tag }} · Members only</span>
+  <span class="cs-corner cs-tr cs-withheld">Withheld: <span class="cs-closed">3</span><span class="cs-open">0</span></span>
+  <span class="cs-corner cs-bl">Register CS-004</span>
+  <span class="cs-corner cs-br">Read the full minutes ↗</span>
+
+  <div class="cs-identity">
+    <svg class="cs-mark" viewBox="0 0 32 32" aria-hidden="true">
+      <path class="cs-cone cs-blue" d="M7 13 12.5 28H1.5Z"/>
+      <path class="cs-cone cs-yellow" d="M25 13 30.5 28H19.5Z"/>
+      <path class="cs-cone cs-yellow" d="M16 12 22 28H10Z"/>
+      <g class="cs-hat" style="--d: .45s"><rect x="4.75" y="9.75" width="4.5" height="3.75"/><rect x="3.55" y="13.05" width="6.9" height="1.2"/></g>
+      <g class="cs-hat" style="--d: .6s"><rect x="22.75" y="9.75" width="4.5" height="3.75"/><rect x="21.55" y="13.05" width="6.9" height="1.2"/></g>
+      <g class="cs-hat" style="--d: .75s"><rect x="13.3" y="8" width="5.4" height="4.5"/><rect x="11.86" y="11.96" width="8.28" height="1.44"/></g>
+      <rect class="cs-bar" x="1" y="17.5" width="30" height="4"/>
+    </svg>
+    <h3 class="cs-wordmark" aria-label="{{ project.name }}">
+      <span aria-hidden="true">CONE</span>
+      <span aria-hidden="true">SORTIUM</span>
+    </h3>
+  </div>
+
+  <div class="cs-laws">
+    <p class="cs-label">By-laws // 01–03</p>
+    <p class="cs-headline">I. Members shall not drift.</p>
+    <p class="cs-law">II. The CPU shall not be asked to help. The slowest backend is kept <span class="cs-r">to prove the others right</span>.</p>
+    <p class="cs-law">III. Infinity shall not exceed ten. Ten shall be considered <span class="cs-r">infinite enough</span>.</p>
+    <p class="cs-note">Every member is the important one. Each has <span class="cs-r">a README saying so</span>.</p>
+  </div>
+</a>

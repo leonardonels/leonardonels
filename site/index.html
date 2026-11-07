@@ -1,0 +1,187 @@
+---
+layout: default
+---
+<section class="hero" id="top">
+  <div class="bp bp-hero">
+    <span class="notch notch-top" aria-hidden="true"></span><span class="notch notch-bottom" aria-hidden="true"></span>
+
+    <div class="bp-main">
+      <div class="halftone" aria-hidden="true"></div>
+      <div class="bp-head mono"><span>AI engineering student · Modena</span><span>Boarding pass · Class M.Sc.</span></div>
+
+      <div class="route-hero">
+        <span class="route-end"><span class="mono">From</span><span class="disp">MOD</span></span>
+        <span class="disp route-arrow" aria-hidden="true">→</span>
+        <span class="route-end"><span class="mono">To</span><span class="disp">CONES</span></span>
+      </div>
+
+      <h1>I make robots see <span class="accent">cones.</span></h1>
+
+      <p class="intro">Hi, I'm Leonardo. M.Sc. student in AI Engineering at UNIMORE. I write CUDA, ROS 2 and too many Docker containers.</p>
+      <!--
+        <p class="availability">Open to [thesis / internships / roles] from [date].</p>
+      -->
+
+      <div class="actions">
+        <a class="btn btn-ink lift" href="https://github.com/leonardonels">GitHub ↗</a>
+        <a class="btn lift" href="#work">See the projects ↓</a>
+      </div>
+    </div>
+
+    <div class="bp-stub">
+      <span class="mono">Stub · keep</span>
+      <span class="stub-field"><span class="mono">Passenger</span><span class="stub-text">Nels / Leonardo</span></span>
+      <span class="stub-field"><span class="mono">Seat</span><span class="stub-text">AI Eng.</span></span>
+      <span class="stub-field"><span class="mono">Flight</span><span class="disp stub-big">LN 007</span></span>
+      <span class="barcode" aria-hidden="true"></span>
+    </div>
+  </div>
+
+  <aside class="hero-side">
+    <div class="card now">
+      <span class="mono accent now-label"><span class="status-dot"></span>Now boarding · Gate F</span>
+      <span class="now-text">Training autonomous robots for Fincantieri S.p.A.</span>
+    </div>
+
+    <div class="card">
+      <span class="mono">Checked baggage · 8 pcs</span>
+      <ul class="chips">
+        <li>C++</li>
+        <li>CUDA</li>
+        <li>Python</li>
+        <li>PyTorch</li>
+        <li>OpenCV</li>
+        <li>ROS 2</li>
+        <li>Docker</li>
+        <li>Proxmox</li>
+      </ul>
+    </div>
+  </aside>
+</section>
+
+{% assign projects = site.projects | sort: "order" %}
+{% assign others = projects | where_exp: "project", "project.featured != true" %}
+
+<div class="ticker" aria-hidden="true">
+  <span>Departures{% for project in others %} — {{ project.flight | remove: " " }} {{ project.name }} {% if project.stub.accent %}<span class="accent">{{ project.stub.value }}</span>{% else %}{{ project.stub.note | default: "on time" | downcase }}{% endif %}{% endfor %} — LN∞ all repositories open — Departures{% for project in others %} — {{ project.flight | remove: " " }} {{ project.name }} {% if project.stub.accent %}<span class="accent">{{ project.stub.value }}</span>{% else %}{{ project.stub.note | default: "on time" | downcase }}{% endif %}{% endfor %}</span>
+</div>
+
+<section class="work" id="work">
+  <div class="section-head">
+    <h2>Departures</h2>
+    <span class="mono">Gate 1 · {% if projects.size < 10 %}0{% endif %}{{ projects.size }} flights</span>
+  </div>
+
+  {% assign featured = projects | where: "featured", true %}
+  {% for project in featured %}
+    {% assign card = project.card | default: "featured-card" %}
+    {% include {{ card }}.html project=project %}
+  {% endfor %}
+
+  <div class="passes">
+    {% for project in others %}
+    <a class="bp lift" href="{{ project.link }}">
+      <span class="notch notch-top" aria-hidden="true"></span><span class="notch notch-bottom" aria-hidden="true"></span>
+      <span class="bp-main">
+        <span class="mono">{{ project.flight }} · {{ project.tag }}</span>
+        <span class="pass-name">{{ project.name }}</span>
+        {% if project.route %}<span class="disp pass-route">{{ project.route[0] }} <span class="accent">→</span> {{ project.route[1] }}</span>{% endif %}
+        <span class="pass-desc">{{ project.description }}</span>
+      </span>
+      <span class="bp-stub">
+        <span class="mono">{{ project.stub.label | default: "Gate" }}</span>
+        <span class="disp stub-big{% if project.stub.accent %} accent{% endif %}">{{ project.stub.value }}</span>
+        <span class="mono">{{ project.stub.note | default: "On time" }}</span>
+      </span>
+    </a>
+    {% endfor %}
+
+    <a class="bp bp-dark lift" href="https://github.com/leonardonels?tab=repositories">
+      <span class="notch notch-top" aria-hidden="true"></span><span class="notch notch-bottom" aria-hidden="true"></span>
+      <span class="bp-main">
+        <span class="mono">There is more · Charter</span>
+        <span class="pass-name">All repositories ↗</span>
+        <span class="disp pass-route">Here <span class="accent">→</span> GitHub</span>
+      </span>
+      <span class="bp-stub">
+        <span class="mono">Gate</span>
+        <span class="disp stub-big">∞</span>
+        <span class="mono">Open</span>
+      </span>
+    </a>
+  </div>
+</section>
+
+{% if site.posts.size > 0 %}
+<section class="card ledger" id="blog">
+  <div class="ledger-head">
+    <h2>Logbook</h2>
+    <span class="mono">Gate 2 · {{ site.posts.size }} entries</span>
+  </div>
+  {% for post in site.posts limit: 5 %}
+  <a class="leg" href="{{ post.url | relative_url }}">
+    <span class="mono">{{ post.date | date: "%Y" }}</span>
+    <span class="leg-title">{{ post.title }}</span>
+    <span class="leg-place hide-s">{{ post.date | date: "%-d %b %Y" }}</span>
+    <span class="mono leg-status hide-s">Read →</span>
+  </a>
+  {% endfor %}
+</section>
+{% endif %}
+
+<section class="card ledger" id="about">
+  <div class="ledger-head">
+    <h2>Itinerary</h2>
+    <span class="mono">Gate {% if site.posts.size > 0 %}3{% else %}2{% endif %} · 5 legs</span>
+  </div>
+  <div class="leg">
+    <span class="mono accent">Now</span>
+    <span class="leg-title">Curricular Internship</span>
+    <span class="leg-place hide-s">Fincantieri S.p.A.</span>
+    <span class="mono leg-status hide-s">In flight</span>
+  </div>
+  <div class="leg">
+    <span class="mono accent">Now</span>
+    <span class="leg-title">M.Sc. AI Engineering</span>
+    <span class="leg-place hide-s">UNIMORE, Modena</span>
+    <span class="mono leg-status hide-s">In flight</span>
+  </div>
+  <div class="leg">
+    <span class="mono">2026</span>
+    <span class="leg-title">Autonomous Driving Division Leader</span>
+    <span class="leg-place hide-s">MMR, More Modena Racing</span>
+    <span class="mono leg-status hide-s">Landed</span>
+  </div>
+  <div class="leg">
+    <span class="mono">2025</span>
+    <span class="leg-title">Autonomous Driving Division Member</span>
+    <span class="leg-place hide-s">MMR, More Modena Racing</span>
+    <span class="mono leg-status hide-s">Landed</span>
+  </div>
+  <div class="leg">
+    <span class="mono">2024</span>
+    <span class="leg-title">B.Sc. Computer Engineering</span>
+    <span class="leg-place hide-s">UNIMORE</span>
+    <span class="mono leg-status hide-s">Landed</span>
+  </div>
+</section>
+
+<section class="bp bp-dark hire" id="hire">
+  <span class="notch notch-top" aria-hidden="true"></span><span class="notch notch-bottom" aria-hidden="true"></span>
+  <div class="hire-main">
+    <span class="mono">Gate {% if site.posts.size > 0 %}4{% else %}3{% endif %} · Final call</span>
+    <h2>Got a robot that needs to see?</h2>
+    <!--
+      <p>Open to [thesis / internships / roles] from [date].</p>
+    -->
+    <div class="actions">
+      <a class="btn btn-accent" href="mailto:leonardo.nels.2000@gmail.com">Email me →</a>
+      <a class="btn btn-ghost" href="https://linkedin.com/in/leonardonels">LinkedIn ↗</a>
+    </div>
+  </div>
+  <div class="bp-stub">
+    <span class="mono">Seats left</span>
+    <span class="disp hire-seats accent">1</span>
+    <span class="mono">MOD → you</span>
+  </div>
+</section>

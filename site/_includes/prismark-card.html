@@ -1,0 +1,37 @@
+{% assign project = include.project %}
+<a class="featured prismark reveal reveal-drop press" href="{{ project.link }}">
+  <div class="pm-identity">
+    <div class="pm-meta">
+      <span>{{ project.tag }}</span>
+      <span>x86-64 · ARM64</span>
+    </div>
+
+    <div class="pm-lockup">
+      <svg class="pm-mark" viewBox="0 0 64 64" aria-hidden="true">
+        <polygon class="pm-prism" points="4,54 26,10 48,54"></polygon>
+        <polygon class="pm-bar" style="--d: .5s" points="35,18 62,18 62,26 39,26"></polygon>
+        <polygon class="pm-bar pm-bar-blue" style="--d: .62s" points="41,30 62,30 62,38 45,38"></polygon>
+        <polygon class="pm-bar" style="--d: .74s" points="47,42 62,42 62,54 53,54"></polygon>
+      </svg>
+      <h3 class="pm-wordmark" aria-label="{{ project.name }}">
+        <span aria-hidden="true">PRIS</span>
+        <span aria-hidden="true">MARK</span>
+      </h3>
+    </div>
+
+    <ul class="pm-tests">
+      {% for test in project.tests %}
+      <li>{{ test }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="pm-claim">
+    <p class="pm-label">Principle // 00</p>
+    <div class="pm-message">
+      <p class="pm-headline">No overall score.</p>
+      <p class="pm-description">{{ project.description }}</p>
+    </div>
+    <span class="pm-link">Visit site ↗</span>
+  </div>
+</a>

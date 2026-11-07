@@ -1,0 +1,22 @@
+{% assign project = include.project %}
+<a class="featured featured-default reveal reveal-drop press" href="{{ project.link }}" style="--bg: {{ project.color }}">
+  <div class="featured-text">
+    <span class="project-tag">{{ project.tag }}</span>
+    <h3 class="featured-name">{{ project.name }}</h3>
+    <p class="featured-desc">{{ project.description }}</p>
+
+    {% if project.stats %}
+    <div class="featured-stats">
+      {% for stat in project.stats %}
+      <div class="featured-stat"><strong>{{ stat.value }}</strong><span>{{ stat.label }}</span></div>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+
+  {% if project.image %}
+  <div class="featured-media">
+    <img src="{{ project.image | relative_url }}" alt="">
+  </div>
+  {% endif %}
+</a>
