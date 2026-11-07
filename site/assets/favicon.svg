@@ -1,5 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <path d="M9.5 3h5l5 16h-15z" fill="#FF7A1A" stroke="#000" stroke-width="1.5" stroke-linejoin="round"/>
-  <path d="M8.2 9h7.6l1.2 4H7z" fill="#fff"/>
-  <rect x="2" y="19" width="20" height="3" fill="#000"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- 08a flap tile: one tile of the departures board with a paper L.
+       The L is drawn as an outline of Big Shoulders Display 900. -->
+  <rect width="32" height="32" rx="5" fill="#1A1714"/>
+  <rect x="3" y="3" width="26" height="26" rx="3" fill="#2E2925"/>
+  <path d="M11.7 5.9h4v18h5.3v3.6h-9.3z" fill="#F2EDE1"/>
+  <rect x="3" y="15.4" width="26" height="1.2" fill="#000" fill-opacity=".7"/>
 </svg>
